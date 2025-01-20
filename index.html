@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ResultadoProvavel</title>
+
+    <script src="https://cdn.plot.ly/plotly-2.24.2.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- fonte google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Resultado Provavel</h1>
+    <p>"Probabilidade é facil, quero ver matar um Tarasque na vida real"</p>
+    <p> - Mineiro, 2022</p>
+    <div>
+        <label for="numDados">Número de Dados:</label>
+        <input type="number" id="numDados" value="30" min="1">
+    </div>
+    <div>
+        <label for="ladosDado">Lados do Dado:</label>
+        <input type="number" id="ladosDado" value="6" min="1">
+    </div>
+    <div>
+        <label for="numSimulacoes">Número de Simulações:</label>
+        <input type="number" id="numSimulacoes" value="100000" min="1">
+    </div>
+    <button onclick="gerarGrafico()">Gerar Gráficos</button>
+
+    <h2>Coloque a quantidade de dados e numero de faces</h2>
+    <h2>para ver a probabilidade de cada resultado</h2>
+    <div id="graficoBarras"></div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

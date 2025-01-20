@@ -1,0 +1,89 @@
+body {
+    font-family: "Cinzel", serif;
+    background-color: #1c1b29;
+    color: #e2c275;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #e63946;
+    font-size: 3rem;
+    margin: 20px 0;
+    text-shadow: 2px 2px 5px #000;
+}
+
+#bar-chart {
+    background: #2d2a3b;
+    border: 5px solid #e63946;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    margin: 20px 0;
+    width: 80%;
+    max-width: 800px;
+}
+
+a {
+    color: #f4a261;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #e76f51;
+    text-decoration: underline;
+}
+
+button {
+    background-color: #6d597a;
+    color: #f4a261;
+    border: 2px solid #e63946;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+    background-color: #e63946;
+    color: #fff;
+    border-color: #f4a261;
+}
+
+footer {
+    text-align: center;
+    color: #b8a089;
+    margin: 20px 0;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        margin: 15px 0;
+    }
+
+    #bar-chart {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    #bar-chart {
+        width: 95%;
+        padding: 10px;
+    }
+}
